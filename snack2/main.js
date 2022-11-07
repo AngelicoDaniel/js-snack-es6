@@ -26,6 +26,9 @@ let over70 = students.filter((element) =>{
 console.log(over70)
 
 //3
-let newArr = []
-
-students.
+let newArr = students.filter((element) =>{
+    if (element.grades > 70 && element.id > 120){
+        return true
+    }
+})
+console.log(newArr)
