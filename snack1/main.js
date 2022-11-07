@@ -10,9 +10,20 @@ let min = 2
 let max = 5
 
 //filter
-const arrFilter = myArray.filter((numero) => {
-    if (numero >= min && numero <= max) {
-        return true
-    }
+const arrFilter = myArray.filter((element, numero) => {
+    // if (numero >= min && numero <= max) {
+    //     return true
+    // }
+    return numero > min && numero < max
+
 })
 console.log(arrFilter)
+
+//for each
+let arrForEach = []
+myArray.forEach((element, numero) =>{
+    if (numero > min && numero < max){
+        arrForEach.push(element)
+    }
+})
+console.log(arrForEach)
