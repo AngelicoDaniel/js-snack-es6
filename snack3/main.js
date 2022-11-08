@@ -17,7 +17,4 @@ const bici = [
         peso: 2
     }
 ]
-
-
-let {peso} = PesoBici
-console.log(Math.min(PesoBici))
+console.table(bici)
