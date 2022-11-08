@@ -37,7 +37,13 @@ for (let i = 0; i < squadre.length; i++){
 }
 console.log(squadre)
 
+const newArray = []
 
+for (let i = 0; i < squadre.length; i++){
+    const {nome, falliSubiti} = squadre[i]
+    newArray.push(nome, falliSubiti)
+    console.log(`statistiche: `, nome, falliSubiti)
+}
 
 
 // funzione numero random
