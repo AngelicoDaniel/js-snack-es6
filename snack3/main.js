@@ -18,3 +18,7 @@ const bici = [
     }
 ]
 console.table(bici)
+
+let minWeight = Math.min(...bici.map( ( {peso} ) => peso ) )
+
+console.log(`peso minimo: ${minWeight}`)
