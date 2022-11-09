@@ -19,6 +19,21 @@ const bici = [
 ]
 console.table(bici)
 
-let minWeight = Math.min(...bici.map( ( {peso} ) => peso ) )
+//math.min
+// let minWeight = Math.min(...bici.map( ( {peso} ) => peso ) )
 
-console.log(`peso minimo: ${minWeight}`)
+// console.log(`peso minimo: ${minWeight}`)
+
+let biciLeggera = bici[0];
+
+for (let i = 0; i < bici.length; i++) {
+    let elementoCorrente = bici[i];
+    let { peso } = elementoCorrente;
+
+    if ( peso < biciLeggera.peso ) {
+        biciLeggera = elementoCorrente;
+    }
+    
+}
+
+console.log ( biciLeggera )
